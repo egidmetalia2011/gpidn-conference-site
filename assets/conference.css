@@ -1,0 +1,113 @@
+/* ===== GPIDN 2026 Conference page — scoped styles (cf- prefix) ===== */
+.cf-container{max-width:1180px;margin:0 auto;padding:0 24px;}
+.cf-section{padding:84px 0;}
+
+/* ---- HERO BANNER ---- */
+.cf-hero{position:relative;min-height:80vh;display:flex;align-items:flex-end;
+  background-image:url('ljubljana-waterfront.jpg');background-size:cover;background-position:center 38%;background-repeat:no-repeat;}
+.cf-hero-overlay{width:100%;
+  background:linear-gradient(180deg,rgba(18,47,42,0) 0%,rgba(18,47,42,.12) 30%,rgba(18,47,42,.55) 62%,rgba(18,47,42,.88) 100%);
+  padding:140px 0 70px;}
+.cf-hero-inner{max-width:1180px;margin:0 auto;padding:0 24px;color:#fff;}
+.cf-hero-kicker{text-transform:uppercase;letter-spacing:.2em;font-size:14px;font-weight:700;color:#bfe0d6;margin:0 0 16px;}
+.cf-hero-title{font-family:var(--font-family--title-font);font-size:clamp(40px,6.2vw,78px);line-height:1.02;margin:0 0 20px;color:#fff;font-weight:400;}
+.cf-hero-sub{font-size:clamp(18px,2.2vw,27px);max-width:780px;line-height:1.4;margin:0 0 34px;color:#edf4f1;}
+.cf-photo-credit{position:absolute;right:12px;bottom:8px;font-size:11px;color:rgba(255,255,255,.55);}
+.cf-photo-credit a{color:rgba(255,255,255,.7);}
+
+/* ---- BUTTONS ---- */
+.cf-btn{display:inline-block;font-family:var(--font-family--body-font);font-weight:600;font-size:16px;padding:16px 36px;border-radius:8px;text-decoration:none;cursor:pointer;border:none;transition:transform .2s,background .2s;}
+.cf-btn-primary{background:#00715d;color:#fff;}
+.cf-btn-primary:hover{background:#015c4c;transform:translateY(-2px);}
+.cf-btn-light{background:#fff;color:#122f2a;}
+.cf-btn-light:hover{transform:translateY(-2px);}
+
+/* ---- TABS ---- */
+.cf-tabs-section{background:#fff;}
+.cf-tab-menu{display:flex;flex-wrap:wrap;gap:4px;border-bottom:2px solid #e3eeec;position:sticky;top:0;background:#fff;z-index:30;padding-top:14px;}
+.cf-tab-link{font-family:var(--font-family--title-font);font-size:23px;background:none;border:none;padding:18px 30px;color:#7a857f;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;transition:color .2s,border-color .2s;}
+.cf-tab-link:hover{color:#122f2a;}
+.cf-tab-link.is-active{color:#122f2a;border-bottom-color:#00715d;}
+.cf-tab-pane{display:none;padding:60px 0 10px;}
+.cf-tab-pane.is-active{display:block;animation:cffade .4s ease;}
+@keyframes cffade{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:none;}}
+
+/* ---- HEADINGS / TEXT ---- */
+.cf-eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:13px;font-weight:700;color:#00715d;margin:0 0 10px;}
+.cf-h2{font-family:var(--font-family--title-font);font-size:clamp(30px,4vw,46px);color:#122f2a;font-weight:400;margin:0 0 14px;line-height:1.08;}
+.cf-h3{font-family:var(--font-family--title-font);font-size:28px;color:#122f2a;font-weight:400;margin:0 0 16px;}
+.cf-lead{font-size:18px;line-height:1.72;color:#37443f;max-width:840px;margin:0 0 8px;}
+.cf-divider{height:1px;background:#e3eeec;margin:58px 0;border:none;}
+.cf-coming{display:inline-block;background:#e3eeec;color:#00715d;font-weight:700;padding:9px 20px;border-radius:30px;font-size:15px;}
+
+/* ---- COMMITTEE GRID ---- */
+.cf-committee-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(335px,1fr));gap:22px;margin-top:30px;}
+.cf-member{background:#f7faf9;border:1px solid #e3eeec;border-radius:14px;padding:26px;}
+.cf-member h4{font-family:var(--font-family--title-font);font-size:22px;color:#122f2a;margin:0 0 4px;font-weight:400;}
+.cf-affil{font-size:14px;color:#00715d;font-weight:600;margin:0 0 2px;}
+.cf-focus{font-size:13px;color:#7a857f;font-style:italic;margin:0 0 14px;}
+.cf-bio{font-size:14.5px;line-height:1.62;color:#41504b;margin:0;}
+
+/* ---- CHECKLIST (who should attend) ---- */
+.cf-checklist{list-style:none;padding:0;margin:22px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:13px;}
+.cf-checklist li{position:relative;padding-left:36px;font-size:16px;color:#37443f;line-height:1.5;}
+.cf-checklist li:before{content:"";position:absolute;left:0;top:1px;width:21px;height:21px;border-radius:50%;background:#00715d;}
+.cf-checklist li:after{content:"";position:absolute;left:7px;top:5px;width:6px;height:11px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg);}
+
+/* ---- DEADLINES ---- */
+.cf-deadlines{background:#122f2a;color:#fff;}
+.cf-deadlines .cf-h2{color:#fff;}
+.cf-deadlines .cf-eyebrow{color:#7fd3bf;}
+.cf-deadlines .cf-lead{color:#cfe0db;}
+.cf-deadline-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:18px;margin-top:38px;}
+.cf-deadline-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:28px 24px;}
+.cf-deadline-card .cf-date{font-family:var(--font-family--title-font);font-size:27px;color:#7fd3bf;margin:0 0 10px;line-height:1.1;}
+.cf-deadline-card .cf-dlabel{font-size:15px;color:#dfeae6;line-height:1.45;margin:0;}
+
+/* ---- SPEAKERS ---- */
+.cf-speakers{background:#f5f7fa;}
+.cf-speaker-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:30px;margin-top:42px;}
+.cf-speaker-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 10px 34px rgba(18,47,42,.08);}
+.cf-photo-ph{aspect-ratio:4/3;background:linear-gradient(135deg,#e3eeec,#cbe1da);display:flex;align-items:center;justify-content:center;color:#6a8a82;}
+.cf-photo-ph svg{width:56px;height:56px;opacity:.45;}
+.cf-speaker-body{padding:26px;}
+.cf-speaker-body h4{font-family:var(--font-family--title-font);font-size:23px;color:#122f2a;margin:0 0 8px;font-weight:400;}
+.cf-placeholder-text{color:#9aa6a2;font-size:14.5px;line-height:1.6;font-style:italic;margin:0;}
+
+/* ---- SPLIT (why ljubljana / venue) ---- */
+.cf-split{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;margin-top:14px;}
+.cf-split.rev .cf-split-media{order:-1;}
+.cf-split-media img{width:100%;border-radius:16px;display:block;box-shadow:0 10px 34px rgba(18,47,42,.1);}
+.cf-cap{font-size:12.5px;color:#9aa6a2;margin:8px 2px 0;}
+.cf-bullets{margin:16px 0 0;padding-left:20px;}
+.cf-bullets li{font-size:16px;color:#37443f;line-height:1.7;margin-bottom:4px;}
+
+/* ---- RATES TABLE ---- */
+.cf-rates{width:100%;border-collapse:collapse;margin-top:22px;max-width:660px;border-radius:12px;overflow:hidden;box-shadow:0 6px 24px rgba(18,47,42,.07);}
+.cf-rates th,.cf-rates td{text-align:left;padding:16px 20px;border-bottom:1px solid #eef3f1;font-size:16px;}
+.cf-rates thead th{background:#122f2a;color:#fff;font-family:var(--font-family--title-font);font-weight:400;font-size:18px;}
+.cf-rates tbody tr:nth-child(even){background:#f7faf9;}
+.cf-rates td:last-child,.cf-rates th:last-child{text-align:right;font-weight:600;color:#00715d;}
+
+/* ---- SPONSORS ---- */
+.cf-sponsor-tier{margin-top:36px;}
+.cf-tier-label{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 16px;border-radius:20px;margin-bottom:18px;}
+.cf-tier-platinum{background:#e7e9f0;color:#5b6275;}
+.cf-tier-bronze{background:#f2e1d1;color:#9c6a3c;}
+.cf-tier-co{background:#e3eeec;color:#00715d;}
+.cf-logo-row{display:flex;flex-wrap:wrap;gap:22px;}
+.cf-logo-ph{width:235px;height:124px;background:#fff;border:1px dashed #c2d3ce;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;}
+.cf-logo-ph strong{font-family:var(--font-family--title-font);font-size:24px;color:#122f2a;font-weight:400;}
+.cf-logo-ph span{font-size:12px;color:#9aa6a2;}
+
+/* ---- THEMES + NOTE ---- */
+.cf-themes{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:14px;max-width:900px;}
+.cf-themes li{background:#f7faf9;border-left:4px solid #00715d;border-radius:0 10px 10px 0;padding:17px 22px;font-size:16px;color:#37443f;line-height:1.5;}
+.cf-note{background:#fff8ea;border:1px solid #f0e2bf;border-radius:12px;padding:18px 22px;font-size:15px;color:#7a6420;margin-top:18px;max-width:860px;}
+
+@media(max-width:860px){
+  .cf-split{grid-template-columns:1fr;gap:28px;}
+  .cf-split.rev .cf-split-media{order:0;}
+  .cf-tab-link{font-size:18px;padding:14px 16px;}
+  .cf-section{padding:60px 0;}
+}
