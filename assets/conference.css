@@ -40,13 +40,24 @@
 .cf-divider{height:1px;background:#e3eeec;margin:58px 0;border:none;}
 .cf-coming{display:inline-block;background:#e3eeec;color:#00715d;font-weight:700;padding:9px 20px;border-radius:30px;font-size:15px;}
 
-/* ---- COMMITTEE GRID ---- */
-.cf-committee-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(335px,1fr));gap:22px;margin-top:30px;}
-.cf-member{background:#f7faf9;border:1px solid #e3eeec;border-radius:14px;padding:26px;}
-.cf-member h4{font-family:var(--font-family--title-font);font-size:22px;color:#122f2a;margin:0 0 4px;font-weight:400;}
-.cf-affil{font-size:14px;color:#00715d;font-weight:600;margin:0 0 2px;}
+/* ---- COMMITTEE GRID (4 across) ---- */
+.cf-committee-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:30px;}
+.cf-member{background:#f7faf9;border:1px solid #e3eeec;border-radius:14px;padding:24px 20px;text-align:center;}
+.cf-avatar{width:96px;height:96px;border-radius:50%;margin:0 auto 16px;background:linear-gradient(135deg,#e3eeec,#cbe1da);display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.cf-avatar svg{width:46px;height:46px;color:#6a8a82;opacity:.55;}
+.cf-avatar img{width:100%;height:100%;object-fit:cover;}
+.cf-member h4{font-family:var(--font-family--title-font);font-size:21px;color:#122f2a;margin:0 0 4px;font-weight:400;}
+.cf-affil{font-size:13.5px;color:#00715d;font-weight:600;margin:0 0 2px;}
 .cf-focus{font-size:13px;color:#7a857f;font-style:italic;margin:0 0 14px;}
-.cf-bio{font-size:14.5px;line-height:1.62;color:#41504b;margin:0;}
+.cf-bio{font-size:14px;line-height:1.6;color:#41504b;margin:0;text-align:left;}
+@media(max-width:1100px){.cf-committee-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:620px){.cf-committee-grid{grid-template-columns:1fr;}}
+
+/* ---- SPONSOR LOGO CARDS ---- */
+.cf-logo-card{background:#fff;border:1px solid #e7eeec;border-radius:14px;padding:26px 32px;display:flex;align-items:center;justify-content:center;min-width:220px;min-height:130px;box-shadow:0 6px 22px rgba(18,47,42,.06);}
+.cf-logo-card img{max-width:230px;max-height:90px;width:auto;height:auto;display:block;}
+.cf-logo-card.cf-logo-wide img{max-width:440px;max-height:120px;}
+.cf-logo-card.cf-logo-wide{min-width:300px;}
 
 /* ---- CHECKLIST (who should attend) ---- */
 .cf-checklist{list-style:none;padding:0;margin:22px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:13px;}
