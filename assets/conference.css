@@ -12,6 +12,7 @@
 .cf-hero-kicker{text-transform:uppercase;letter-spacing:.2em;font-size:14px;font-weight:700;color:#bfe0d6;margin:0 0 16px;}
 .cf-hero-title{font-family:var(--font-family--title-font);font-size:clamp(40px,6.2vw,78px);line-height:1.02;margin:0 0 20px;color:#fff;font-weight:400;}
 .cf-hero-sub{font-size:clamp(18px,2.2vw,27px);max-width:780px;line-height:1.4;margin:0 0 34px;color:#edf4f1;}
+@media(min-width:992px){.cf-hero-sub{white-space:nowrap;font-size:22px;max-width:none;}}
 .cf-photo-credit{position:absolute;right:12px;bottom:8px;font-size:11px;color:rgba(255,255,255,.55);}
 .cf-photo-credit a{color:rgba(255,255,255,.7);}
 
@@ -21,6 +22,8 @@
 .cf-btn-primary:hover{background:#015c4c;transform:translateY(-2px);}
 .cf-btn-light{background:#fff;color:#122f2a;}
 .cf-btn-light:hover{transform:translateY(-2px);}
+.cf-btn-outline{background:transparent;color:#00715d;border:2px solid #00715d;padding:14px 34px;}
+.cf-btn-outline:hover{background:#00715d;color:#fff;transform:translateY(-2px);}
 
 /* ---- TABS ---- */
 .cf-tabs-section{background:#fff;}
