@@ -7,7 +7,9 @@
   background-image:url('69b21fb2531335c99ecaf2f8_photo-1612174987768-a7c9411ce30b-fd9adf.avif');background-size:cover;background-position:center 42%;background-repeat:no-repeat;}
 .cf-hero-overlay{width:100%;
   background:linear-gradient(180deg,rgba(18,47,42,0) 0%,rgba(18,47,42,.12) 30%,rgba(18,47,42,.55) 62%,rgba(18,47,42,.88) 100%);
-  padding:140px 0 70px;}
+  padding:160px 0 70px;}
+/* clear the absolute overlay nav so the title never hides under it on short screens */
+@media(min-width:992px){.cf-hero-overlay{padding-top:250px;}}
 .cf-hero-inner{max-width:1180px;margin:0 auto;padding:0 24px;color:#fff;}
 .cf-hero-kicker{text-transform:uppercase;letter-spacing:.2em;font-size:14px;font-weight:700;color:#bfe0d6;margin:0 0 16px;}
 .cf-hero-title{font-family:var(--font-family--title-font);font-size:clamp(40px,6.2vw,78px);line-height:1.02;margin:0 0 20px;color:#fff;font-weight:400;}
