@@ -140,6 +140,10 @@
 .cf-themes{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:14px;max-width:900px;}
 .cf-themes li{background:#f7faf9;border-left:4px solid #00715d;border-radius:0 10px 10px 0;padding:17px 22px;font-size:16px;color:#37443f;line-height:1.5;}
 .cf-note{background:#fff8ea;border:1px solid #f0e2bf;border-radius:12px;padding:18px 22px;font-size:15px;color:#7a6420;margin-top:18px;max-width:860px;}
+.cf-detail-list{list-style:none;padding:0;margin:24px 0 4px;max-width:860px;}
+.cf-detail-list li{padding:13px 2px;border-bottom:1px solid #eef3f1;font-size:15.5px;line-height:1.65;color:#37443f;}
+.cf-detail-list li:last-child{border-bottom:none;}
+.cf-detail-list li strong{color:#122f2a;}
 
 @media(max-width:860px){
   .cf-split{grid-template-columns:1fr;gap:28px;}
